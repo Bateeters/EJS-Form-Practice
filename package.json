@@ -1,0 +1,26 @@
+{
+  "name": "ejs-form-practice",
+  "version": "1.0.0",
+  "description": "Repo dedicated to practicing how forms are utilized to send / create information as well as validate inputs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bateeters/EJS-Form-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Bateeters/EJS-Form-Practice/issues"
+  },
+  "homepage": "https://github.com/Bateeters/EJS-Form-Practice#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1"
+  }
+}
