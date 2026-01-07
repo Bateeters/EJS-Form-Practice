@@ -7,6 +7,11 @@
     <h1><%= title %></h1>
     <a href="/create">Create a user</a>
 
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Search by name or email">
+        <button type="submit">Search</button>
+    </form>
+
     <ul>
         <% if (locals.users) {%>
             <% users.forEach(function(user) { %>

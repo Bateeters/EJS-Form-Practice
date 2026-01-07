@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Search Results for: "<%= query %>"</p>
+
+    <% if (users.length === 0) { %>
+        <p>No users found.</p>
+    <% } else { %>
+        <ul>
+            <% users.forEach(user => { %>
+                <li>
+                    <strong><%= user.firstName %> <%= user.lastName %></strong>
+                    <span>
+                        Email: <%= user.email %><br>
+                        Age: <%= user.age || "N/A" %><br>
+                        Bio: <%= user.bio || "" %>
+                    </span>
+                </li>
+            <% }) %>
+        </ul>
+    <% } %>
+    <a href="/">Back to Home</a>
+</body>
+</html>
